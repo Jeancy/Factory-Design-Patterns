@@ -4,10 +4,10 @@ package factorymethode;
 // Coding through interface principal
 public interface Browser {
     //defining the default behaviour with java 8 default method
-    default void start(){
+    public default void start(){
         System.out.println("Starting Browser ....");
     }
-    default void stop(){
+    public default void stop(){
         System.out.println("Stopping Browser...");
     }
     
@@ -48,7 +48,7 @@ class FireFox implements Browser{
     public void start(){
         System.out.println("Starting Firefox....");
     }
-    @Override
+    @Override //overriding the to string method.
     public void stop(){
         System.out.println("Stopping FireFox...");  
     }
