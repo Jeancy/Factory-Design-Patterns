@@ -9,22 +9,15 @@ public class TestBrowser {
         Browser br3 = BrowserFactory.getBrowser("FireFox");
         Browser br4 = BrowserFactory.getBrowser("XT");
         // Testing the object if it is not null before calling method on it to avoid NullPointerException.
-        if (br1 != null) {
-            br1.start();
-            br1.stop();
+        // Creating an array of browsers.
+        Browser [] brs = {br1, br2,br3, br4};
+        for(Browser br: brs){
+            if (br != null) {
+               br.start();
+               br.stop();
+            }    
         }
-        if (br2 != null) {
-            br2.start();
-            br2.stop();
-        }
-        if (br3 != null) {
-            br3.start();
-            br3.stop();
-        }
-        if (br4 != null) {
-            br4.start();
-            br4.stop();
-        }
+        
         //creating a list of browser
         
         List<Browser> ls = new ArrayList<>();
