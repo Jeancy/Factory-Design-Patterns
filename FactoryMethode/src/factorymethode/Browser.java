@@ -14,6 +14,7 @@ public interface Browser {
 }
 // Implementing the browser interface with different well known browsers.
 
+// Building the Internet Explorer class
 class IE implements Browser {
     @Override
     public void start(){
@@ -29,6 +30,9 @@ class IE implements Browser {
         return " [" +"Internet Explorer ]";
     }
 }
+
+
+// Building the GoogleChrome class
 class GoogleChrome implements Browser {
     @Override
     public void start(){
@@ -43,6 +47,9 @@ class GoogleChrome implements Browser {
         return " [ "+"Google Chrome ]";
     }
 }
+
+
+// Building the FireFox class
 class FireFox implements Browser{
     @Override
     public void start(){
