@@ -16,6 +16,7 @@ public interface Browser {
 
 // Building the Internet Explorer class
 class IE implements Browser {
+    // Overriding the start() method according to the Internet Explorer class.
     @Override
     public void start(){
         System.out.println("Starting Internet Explorer...");
